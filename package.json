@@ -1,0 +1,89 @@
+{
+    "name": "myApp",
+    "version": "8.2.0",
+    "main": "main.js",
+    "scripts": {
+        "ng": "ng",
+        "start": "ng serve",
+        "serve": "ng serve",
+        "build": "ng build",
+        "build-lib": "ng build myApp",
+        "test": "ng test",
+        "lint": "ng lint",
+        "e2e": "ng e2e",
+        "build-demo": "ng build --prod",
+        "build-npm": "ng build myApp --prod",
+        "deploy": "npm run build-npm && ng deploy",
+        "start:electron": "ng build --base-href ./ && electron ."
+    },
+    "homepage": "https://tiberiuzuld.github.io/myApp",
+    "bugs": {
+        "url": "https://github.com/tiberiuzuld/myApp/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tiberiuzuld/myApp.git"
+    },
+    "description": "Angular gridster 2",
+    "keywords": [
+        "angular",
+        "angular2",
+        "typescript",
+        "dashboard",
+        "gridster",
+        "gridster2",
+        "resize",
+        "drag&drop",
+        "widgets"
+    ],
+    "authors": [
+        "Tiberiu Zuld"
+    ],
+    "files": [
+        "dist/*"
+    ],
+    "dependencies": {
+        "angular-gridster2": "^8.2.0"
+    },
+    "devDependencies": {
+        "@angular-devkit/build-angular": "0.803.2",
+        "@angular-devkit/build-ng-packagr": "0.803.2",
+        "@angular/animations": "8.2.4",
+        "@angular/cdk": "8.1.4",
+        "@angular/cli": "8.3.2",
+        "@angular/common": "8.2.4",
+        "@angular/compiler": "8.2.4",
+        "@angular/compiler-cli": "8.2.4",
+        "@angular/core": "8.2.4",
+        "@angular/forms": "8.2.4",
+        "@angular/language-service": "8.2.4",
+        "@angular/material": "8.1.4",
+        "@angular/platform-browser": "8.2.4",
+        "@angular/platform-browser-dynamic": "8.2.4",
+        "@angular/router": "8.2.4",
+        "@types/jasmine": "3.4.0",
+        "@types/jasminewd2": "2.0.6",
+        "@types/node": "12.7.3",
+        "angular-cli-ghpages": "0.6.0",
+        "codelyzer": "5.1.0",
+        "electron": "^7.1.9",
+        "hammerjs": "2.0.8",
+        "jasmine-core": "3.4.0",
+        "jasmine-spec-reporter": "4.2.1",
+        "karma": "4.3.0",
+        "karma-chrome-launcher": "3.1.0",
+        "karma-coverage-istanbul-reporter": "2.1.0",
+        "karma-jasmine": "2.0.1",
+        "karma-jasmine-html-reporter": "1.4.2",
+        "ng-packagr": "5.5.0",
+        "ngx-markdown": "8.1.0",
+        "protractor": "5.4.2",
+        "rxjs": "6.5.2",
+        "ts-node": "8.3.0",
+        "tsickle": "0.37.0",
+        "tslib": "1.10.0",
+        "tslint": "5.19.0",
+        "typescript": "3.5.3",
+        "zone.js": "0.9.1"
+    }
+}
