@@ -16,70 +16,17 @@ import 'hammerjs';
 import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
 
 import {AppComponent} from './app.component';
-import {ApiComponent} from './sections/api/api.component';
-import {CompactComponent} from './sections/compact/compact.component';
-import {DisplayGridComponent} from './sections/displayGrid/displayGrid.component';
-import {DragComponent} from './sections/drag/drag.component';
-import {DynamicWidgetsComponent} from './sections/dynamicWidgets/dynamicWidgets.component';
-import {ParentDynamicComponent} from './sections/dynamicWidgets/parentDynamic.component';
-import {WidgetAComponent} from './sections/dynamicWidgets/widgetA.component';
-import {WidgetBComponent} from './sections/dynamicWidgets/widgetB.component';
-import {WidgetCComponent} from './sections/dynamicWidgets/widgetC.component';
-import {EmptyCellComponent} from './sections/emptyCell/emptyCell.component';
-import {GridEventsComponent} from './sections/gridEvents/gridEvents.component';
-import {GridMarginsComponent} from './sections/gridMargins/gridMargins.component';
-import {GridSizesComponent} from './sections/gridSizes/gridSizes.component';
-import {GridTypesComponent} from './sections/gridTypes/gridTypes.component';
-import {HomeComponent} from './sections/home/home.component';
-import {ItemsComponent} from './sections/items/items.component';
-import {MiscComponent} from './sections/misc/misc.component';
-import {PushComponent} from './sections/push/push.component';
-import {ResizeComponent} from './sections/resize/resize.component';
-import {SwapComponent} from './sections/swap/swap.component';
+import {KioskComponent} from './components/kiosk/kiosk.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'api', component: ApiComponent},
-  {path: 'compact', component: CompactComponent},
-  {path: 'displayGrid', component: DisplayGridComponent},
-  {path: 'drag', component: DragComponent},
-  {path: 'dynamicWidgets', component: DynamicWidgetsComponent},
-  {path: 'emptyCell', component: EmptyCellComponent},
-  {path: 'gridEvents', component: GridEventsComponent},
-  {path: 'gridMargins', component: GridMarginsComponent},
-  {path: 'gridSizes', component: GridSizesComponent},
-  {path: 'gridTypes', component: GridTypesComponent},
-  {path: 'items', component: ItemsComponent},
-  {path: 'push', component: PushComponent},
-  {path: 'resize', component: ResizeComponent},
-  {path: 'swap', component: SwapComponent},
-  {path: 'misc', component: MiscComponent},
-  {path: '**', redirectTo: ''}
+  {path: 'api', component: KioskComponent},
+  {path: '**', redirectTo: 'api'}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ApiComponent,
-    CompactComponent,
-    DisplayGridComponent,
-    DragComponent,
-    DynamicWidgetsComponent,
-    ParentDynamicComponent,
-    WidgetAComponent,
-    WidgetBComponent,
-    WidgetCComponent,
-    EmptyCellComponent,
-    GridEventsComponent,
-    GridMarginsComponent,
-    GridSizesComponent,
-    GridTypesComponent,
-    ItemsComponent,
-    PushComponent,
-    ResizeComponent,
-    SwapComponent,
-    MiscComponent,
+    KioskComponent,
   ],
   imports: [
     BrowserModule,
