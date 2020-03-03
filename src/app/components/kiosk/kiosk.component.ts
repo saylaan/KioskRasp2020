@@ -14,6 +14,7 @@ import {
 @Component({
   selector: 'app-api',
   templateUrl: './kiosk.component.html',
+  styleUrls: ['./kiosk.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
