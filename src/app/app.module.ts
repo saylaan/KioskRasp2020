@@ -1,3 +1,5 @@
+/* IMPORT */
+/* ANGULAR IMPORT */
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
@@ -11,23 +13,20 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RouterModule, Routes} from '@angular/router';
+/* OTHER PACKAGE IMPORT */
 import {GridsterModule} from 'angular-gridster2';
 import 'hammerjs';
 import {MarkdownModule, MarkedOptions} from 'ngx-markdown';
-
+/* COMPONENTS IMPORTS */
 import {AppComponent} from './app.component';
-import {KioskComponent} from './components/kiosk/kiosk.component';
-
+import {KioskComponent} from './kiosk/kiosk.component';
+/* ROUTES*/
 const appRoutes: Routes = [
   {path: 'api', component: KioskComponent},
   {path: '**', redirectTo: 'api'}
 ];
-
+/* NgModule*/
 @NgModule({
-  declarations: [
-    AppComponent,
-    KioskComponent,
-  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -38,8 +37,9 @@ const appRoutes: Routes = [
     GridsterModule,
     MarkdownModule.forRoot({loader: HttpClient, markedOptions: {provide: MarkedOptions, useValue: {smartypants: true, breaks: true}}}),
   ],
-  providers: [],
+  declarations: [AppComponent, KioskComponent],
   bootstrap: [AppComponent]
+  // providers: [],
 })
 export class AppModule {
 
