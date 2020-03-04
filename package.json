@@ -43,7 +43,8 @@
         "dist/*"
     ],
     "dependencies": {
-        "angular-gridster2": "^8.2.0"
+        "angular-gridster2": "^8.2.0",
+        "bootstrap": "^4.4.1"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "0.803.2",

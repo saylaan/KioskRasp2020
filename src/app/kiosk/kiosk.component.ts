@@ -12,11 +12,11 @@ import {
 } from 'angular-gridster2';
 
 @Component({
-  selector: 'app-api',
+  selector: 'app-kiosk',
   templateUrl: './kiosk.component.html',
   styleUrls: ['./kiosk.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  encapsulation: ViewEncapsulation.None
+  changeDetection: ChangeDetectionStrategy.OnPush, // Detection of component data changed (re-render the view if needed)
+  encapsulation: ViewEncapsulation.None // Can use shadow DOM
 })
 export class KioskComponent implements OnInit {
   options: GridsterConfig;

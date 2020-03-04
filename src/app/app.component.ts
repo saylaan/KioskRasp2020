@@ -8,4 +8,5 @@ import {ChangeDetectionStrategy, Component, ViewEncapsulation} from '@angular/co
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
+  name = 'Bienvenue dans le Kiosk ES';
 }
