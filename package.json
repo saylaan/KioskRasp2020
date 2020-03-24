@@ -43,6 +43,8 @@
         "dist/*"
     ],
     "dependencies": {
+        "@google/maps": "^1.1.0",
+        "@types/googlemaps": "^3.39.3",
         "angular-gridster2": "^8.2.0",
         "bootstrap": "^4.4.1"
     },

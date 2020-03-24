@@ -1,12 +1,14 @@
 <gridster [options]="options">
-    <gridster-item [item]="item" *ngFor="let item of dashboard">
+
+    <gridster-item [item]="widget" *ngFor="let widget of dashboard; index as i">
+        <div class="widget-traffic"
+             *ngIf="i ==0">
+            <widget-trafic></widget-trafic>
+        </div>
+        <div class="widget"
+             *ngIf="i == 1">
+            <widget-meteo></widget-meteo>
+        </div>
     </gridster-item>
 </gridster>
 
-
-<!-- FOR INPUT OPTION
-<div class="options-header">
-<mat-form-field>
-    <input matInput [(ngModel)]="options.margin" min="0" max="30" step="1" type="number" placeholder="Margin" (ngModelChange)="changedOptions()">
-</mat-form-field>
-</div>-->

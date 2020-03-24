@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-meteo',
+  selector: 'widget-meteo',
   templateUrl: './meteo.component.html',
   styleUrls: ['./meteo.component.css']
 })
